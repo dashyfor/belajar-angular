@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "angular_231103886": {
+    "angular231103886": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -24,17 +24,7 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.css"
-            ],
-            "server": "src/main.server.ts",
-            "outputMode": "server",
-            "security": {
-              "allowedHosts": []
-            },
-            "ssr": {
-              "entry": "src/server.ts"
-            }
+            "styles": ["src/styles.css"]
           },
           "configurations": {
             "production": {
@@ -50,7 +40,8 @@
                   "maximumError": "8kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "serviceWorker": "ngsw-config.json"
             },
             "development": {
               "optimization": false,
@@ -64,10 +55,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular_231103886:build:production"
+              "buildTarget": "angular231103886:build:production"
             },
             "development": {
-              "buildTarget": "angular_231103886:build:development"
+              "buildTarget": "angular231103886:build:development"
             }
           },
           "defaultConfiguration": "development"
