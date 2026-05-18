@@ -1,9 +1,23 @@
-<body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
-<div class="wrapper">
-    <app-header></app-header>
+<body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed"
+>
+  <div class="wrapper">
+
+    <!-- Preloader -->
+    <div class="preloader flex-column justify-content-center align-items-center">
+      <img
+        class="animation__wobble"
+        src="dist/img/waguri.png"
+        alt="AdminLTELogo"
+        height="60"
+        width="60"
+      />
+    </div>
+
+  
+
+    <app-headder-dark></app-headder-dark>
     <app-sidebar moduleName="dashboard2"></app-sidebar>
 
- 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -16,7 +30,7 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v2 dendy kiyanu 231103886</li>
+              <li class="breadcrumb-item active">Dashboard v2</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -47,7 +61,9 @@
           <!-- /.col -->
           <div class="col-12 col-sm-6 col-md-3">
             <div class="info-box mb-3">
-              <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-thumbs-up"></i></span>
+              <span class="info-box-icon bg-danger elevation-1"
+                ><i class="fas fa-thumbs-up"></i
+              ></span>
 
               <div class="info-box-content">
                 <span class="info-box-text">Likes</span>
@@ -64,7 +80,9 @@
 
           <div class="col-12 col-sm-6 col-md-3">
             <div class="info-box mb-3">
-              <span class="info-box-icon bg-success elevation-1"><i class="fas fa-shopping-cart"></i></span>
+              <span class="info-box-icon bg-success elevation-1"
+                ><i class="fas fa-shopping-cart"></i
+              ></span>
 
               <div class="info-box-content">
                 <span class="info-box-text">Sales</span>
@@ -102,7 +120,11 @@
                     <i class="fas fa-minus"></i>
                   </button>
                   <div class="btn-group">
-                    <button type="button" class="btn btn-tool dropdown-toggle" data-toggle="dropdown">
+                    <button
+                      type="button"
+                      class="btn btn-tool dropdown-toggle"
+                      data-toggle="dropdown"
+                    >
                       <i class="fas fa-wrench"></i>
                     </button>
                     <div class="dropdown-menu dropdown-menu-right" role="menu">
@@ -128,7 +150,7 @@
 
                     <div class="chart">
                       <!-- Sales Chart Canvas -->
-                      <canvas id="salesChart" height="180" style="height: 180px;"></canvas>
+                      <canvas id="salesChart" height="180" style="height: 180px"></canvas>
                     </div>
                     <!-- /.chart-responsive -->
                   </div>
@@ -183,7 +205,9 @@
                 <div class="row">
                   <div class="col-sm-3 col-6">
                     <div class="description-block border-right">
-                      <span class="description-percentage text-success"><i class="fas fa-caret-up"></i> 17%</span>
+                      <span class="description-percentage text-success"
+                        ><i class="fas fa-caret-up"></i> 17%</span
+                      >
                       <h5 class="description-header">$35,210.43</h5>
                       <span class="description-text">TOTAL REVENUE</span>
                     </div>
@@ -192,7 +216,9 @@
                   <!-- /.col -->
                   <div class="col-sm-3 col-6">
                     <div class="description-block border-right">
-                      <span class="description-percentage text-warning"><i class="fas fa-caret-left"></i> 0%</span>
+                      <span class="description-percentage text-warning"
+                        ><i class="fas fa-caret-left"></i> 0%</span
+                      >
                       <h5 class="description-header">$10,390.90</h5>
                       <span class="description-text">TOTAL COST</span>
                     </div>
@@ -201,7 +227,9 @@
                   <!-- /.col -->
                   <div class="col-sm-3 col-6">
                     <div class="description-block border-right">
-                      <span class="description-percentage text-success"><i class="fas fa-caret-up"></i> 20%</span>
+                      <span class="description-percentage text-success"
+                        ><i class="fas fa-caret-up"></i> 20%</span
+                      >
                       <h5 class="description-header">$24,813.53</h5>
                       <span class="description-text">TOTAL PROFIT</span>
                     </div>
@@ -210,7 +238,9 @@
                   <!-- /.col -->
                   <div class="col-sm-3 col-6">
                     <div class="description-block">
-                      <span class="description-percentage text-danger"><i class="fas fa-caret-down"></i> 18%</span>
+                      <span class="description-percentage text-danger"
+                        ><i class="fas fa-caret-down"></i> 18%</span
+                      >
                       <h5 class="description-header">1200</h5>
                       <span class="description-text">GOAL COMPLETIONS</span>
                     </div>
@@ -273,8 +303,10 @@
                       <span class="description-text">Organic</span>
                     </div>
                     <!-- /.description-block -->
-                  </div><!-- /.card-pane-right -->
-                </div><!-- /.d-md-flex -->
+                  </div>
+                  <!-- /.card-pane-right -->
+                </div>
+                <!-- /.d-md-flex -->
               </div>
               <!-- /.card-body -->
             </div>
@@ -291,7 +323,12 @@
                       <button type="button" class="btn btn-tool" data-card-widget="collapse">
                         <i class="fas fa-minus"></i>
                       </button>
-                      <button type="button" class="btn btn-tool" title="Contacts" data-widget="chat-pane-toggle">
+                      <button
+                        type="button"
+                        class="btn btn-tool"
+                        title="Contacts"
+                        data-widget="chat-pane-toggle"
+                      >
                         <i class="fas fa-comments"></i>
                       </button>
                       <button type="button" class="btn btn-tool" data-card-widget="remove">
@@ -310,7 +347,11 @@
                           <span class="direct-chat-timestamp float-right">23 Jan 2:00 pm</span>
                         </div>
                         <!-- /.direct-chat-infos -->
-                        <img class="direct-chat-img" src="dist/img/user1-128x128.jpg" alt="message user image">
+                        <img
+                          class="direct-chat-img"
+                          src="dist/img/user1-128x128.jpg"
+                          alt="message user image"
+                        />
                         <!-- /.direct-chat-img -->
                         <div class="direct-chat-text">
                           Is this template really for free? That's unbelievable!
@@ -326,11 +367,13 @@
                           <span class="direct-chat-timestamp float-left">23 Jan 2:05 pm</span>
                         </div>
                         <!-- /.direct-chat-infos -->
-                        <img class="direct-chat-img" src="dist/img/user3-128x128.jpg" alt="message user image">
+                        <img
+                          class="direct-chat-img"
+                          src="dist/img/user3-128x128.jpg"
+                          alt="message user image"
+                        />
                         <!-- /.direct-chat-img -->
-                        <div class="direct-chat-text">
-                          You better believe it!
-                        </div>
+                        <div class="direct-chat-text">You better believe it!</div>
                         <!-- /.direct-chat-text -->
                       </div>
                       <!-- /.direct-chat-msg -->
@@ -342,7 +385,11 @@
                           <span class="direct-chat-timestamp float-right">23 Jan 5:37 pm</span>
                         </div>
                         <!-- /.direct-chat-infos -->
-                        <img class="direct-chat-img" src="dist/img/user1-128x128.jpg" alt="message user image">
+                        <img
+                          class="direct-chat-img"
+                          src="dist/img/user1-128x128.jpg"
+                          alt="message user image"
+                        />
                         <!-- /.direct-chat-img -->
                         <div class="direct-chat-text">
                           Working with AdminLTE on a great new app! Wanna join?
@@ -358,15 +405,16 @@
                           <span class="direct-chat-timestamp float-left">23 Jan 6:10 pm</span>
                         </div>
                         <!-- /.direct-chat-infos -->
-                        <img class="direct-chat-img" src="dist/img/user3-128x128.jpg" alt="message user image">
+                        <img
+                          class="direct-chat-img"
+                          src="dist/img/user3-128x128.jpg"
+                          alt="message user image"
+                        />
                         <!-- /.direct-chat-img -->
-                        <div class="direct-chat-text">
-                          I would love to.
-                        </div>
+                        <div class="direct-chat-text">I would love to.</div>
                         <!-- /.direct-chat-text -->
                       </div>
                       <!-- /.direct-chat-msg -->
-
                     </div>
                     <!--/.direct-chat-messages-->
 
@@ -375,7 +423,11 @@
                       <ul class="contacts-list">
                         <li>
                           <a href="#">
-                            <img class="contacts-list-img" src="dist/img/user1-128x128.jpg" alt="User Avatar">
+                            <img
+                              class="contacts-list-img"
+                              src="dist/img/user1-128x128.jpg"
+                              alt="User Avatar"
+                            />
 
                             <div class="contacts-list-info">
                               <span class="contacts-list-name">
@@ -390,7 +442,11 @@
                         <!-- End Contact Item -->
                         <li>
                           <a href="#">
-                            <img class="contacts-list-img" src="dist/img/user7-128x128.jpg" alt="User Avatar">
+                            <img
+                              class="contacts-list-img"
+                              src="dist/img/user7-128x128.jpg"
+                              alt="User Avatar"
+                            />
 
                             <div class="contacts-list-info">
                               <span class="contacts-list-name">
@@ -405,7 +461,11 @@
                         <!-- End Contact Item -->
                         <li>
                           <a href="#">
-                            <img class="contacts-list-img" src="dist/img/user3-128x128.jpg" alt="User Avatar">
+                            <img
+                              class="contacts-list-img"
+                              src="dist/img/user3-128x128.jpg"
+                              alt="User Avatar"
+                            />
 
                             <div class="contacts-list-info">
                               <span class="contacts-list-name">
@@ -420,7 +480,11 @@
                         <!-- End Contact Item -->
                         <li>
                           <a href="#">
-                            <img class="contacts-list-img" src="dist/img/user5-128x128.jpg" alt="User Avatar">
+                            <img
+                              class="contacts-list-img"
+                              src="dist/img/user5-128x128.jpg"
+                              alt="User Avatar"
+                            />
 
                             <div class="contacts-list-info">
                               <span class="contacts-list-name">
@@ -435,7 +499,11 @@
                         <!-- End Contact Item -->
                         <li>
                           <a href="#">
-                            <img class="contacts-list-img" src="dist/img/user6-128x128.jpg" alt="User Avatar">
+                            <img
+                              class="contacts-list-img"
+                              src="dist/img/user6-128x128.jpg"
+                              alt="User Avatar"
+                            />
 
                             <div class="contacts-list-info">
                               <span class="contacts-list-name">
@@ -450,7 +518,11 @@
                         <!-- End Contact Item -->
                         <li>
                           <a href="#">
-                            <img class="contacts-list-img" src="dist/img/user8-128x128.jpg" alt="User Avatar">
+                            <img
+                              class="contacts-list-img"
+                              src="dist/img/user8-128x128.jpg"
+                              alt="User Avatar"
+                            />
 
                             <div class="contacts-list-info">
                               <span class="contacts-list-name">
@@ -472,7 +544,12 @@
                   <div class="card-footer">
                     <form action="#" method="post">
                       <div class="input-group">
-                        <input type="text" name="message" placeholder="Type Message ..." class="form-control">
+                        <input
+                          type="text"
+                          name="message"
+                          placeholder="Type Message ..."
+                          class="form-control"
+                        />
                         <span class="input-group-append">
                           <button type="button" class="btn btn-warning">Send</button>
                         </span>
@@ -505,42 +582,42 @@
                   <div class="card-body p-0">
                     <ul class="users-list clearfix">
                       <li>
-                        <img src="dist/img/user1-128x128.jpg" alt="User Image">
+                        <img src="dist/img/user1-128x128.jpg" alt="User Image" />
                         <a class="users-list-name" href="#">Alexander Pierce</a>
                         <span class="users-list-date">Today</span>
                       </li>
                       <li>
-                        <img src="dist/img/user8-128x128.jpg" alt="User Image">
+                        <img src="dist/img/user8-128x128.jpg" alt="User Image" />
                         <a class="users-list-name" href="#">Norman</a>
                         <span class="users-list-date">Yesterday</span>
                       </li>
                       <li>
-                        <img src="dist/img/user7-128x128.jpg" alt="User Image">
+                        <img src="dist/img/user7-128x128.jpg" alt="User Image" />
                         <a class="users-list-name" href="#">Jane</a>
                         <span class="users-list-date">12 Jan</span>
                       </li>
                       <li>
-                        <img src="dist/img/user6-128x128.jpg" alt="User Image">
+                        <img src="dist/img/user6-128x128.jpg" alt="User Image" />
                         <a class="users-list-name" href="#">John</a>
                         <span class="users-list-date">12 Jan</span>
                       </li>
                       <li>
-                        <img src="dist/img/user2-160x160.jpg" alt="User Image">
+                        <img src="dist/img/user2-160x160.jpg" alt="User Image" />
                         <a class="users-list-name" href="#">Alexander</a>
                         <span class="users-list-date">13 Jan</span>
                       </li>
                       <li>
-                        <img src="dist/img/user5-128x128.jpg" alt="User Image">
+                        <img src="dist/img/user5-128x128.jpg" alt="User Image" />
                         <a class="users-list-name" href="#">Sarah</a>
                         <span class="users-list-date">14 Jan</span>
                       </li>
                       <li>
-                        <img src="dist/img/user4-128x128.jpg" alt="User Image">
+                        <img src="dist/img/user4-128x128.jpg" alt="User Image" />
                         <a class="users-list-name" href="#">Nora</a>
                         <span class="users-list-date">15 Jan</span>
                       </li>
                       <li>
-                        <img src="dist/img/user3-128x128.jpg" alt="User Image">
+                        <img src="dist/img/user3-128x128.jpg" alt="User Image" />
                         <a class="users-list-name" href="#">Nadia</a>
                         <span class="users-list-date">15 Jan</span>
                       </li>
@@ -578,70 +655,84 @@
                 <div class="table-responsive">
                   <table class="table m-0">
                     <thead>
-                    <tr>
-                      <th>Order ID</th>
-                      <th>Item</th>
-                      <th>Status</th>
-                      <th>Popularity</th>
-                    </tr>
+                      <tr>
+                        <th>Order ID</th>
+                        <th>Item</th>
+                        <th>Status</th>
+                        <th>Popularity</th>
+                      </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                      <td><a href="pages/examples/invoice.html">OR9842</a></td>
-                      <td>Call of Duty IV</td>
-                      <td><span class="badge badge-success">Shipped</span></td>
-                      <td>
-                        <div class="sparkbar" data-color="#00a65a" data-height="20">90,80,90,-70,61,-83,63</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td><a href="pages/examples/invoice.html">OR1848</a></td>
-                      <td>Samsung Smart TV</td>
-                      <td><span class="badge badge-warning">Pending</span></td>
-                      <td>
-                        <div class="sparkbar" data-color="#f39c12" data-height="20">90,80,-90,70,61,-83,68</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td><a href="pages/examples/invoice.html">OR7429</a></td>
-                      <td>iPhone 6 Plus</td>
-                      <td><span class="badge badge-danger">Delivered</span></td>
-                      <td>
-                        <div class="sparkbar" data-color="#f56954" data-height="20">90,-80,90,70,-61,83,63</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td><a href="pages/examples/invoice.html">OR7429</a></td>
-                      <td>Samsung Smart TV</td>
-                      <td><span class="badge badge-info">Processing</span></td>
-                      <td>
-                        <div class="sparkbar" data-color="#00c0ef" data-height="20">90,80,-90,70,-61,83,63</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td><a href="pages/examples/invoice.html">OR1848</a></td>
-                      <td>Samsung Smart TV</td>
-                      <td><span class="badge badge-warning">Pending</span></td>
-                      <td>
-                        <div class="sparkbar" data-color="#f39c12" data-height="20">90,80,-90,70,61,-83,68</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td><a href="pages/examples/invoice.html">OR7429</a></td>
-                      <td>iPhone 6 Plus</td>
-                      <td><span class="badge badge-danger">Delivered</span></td>
-                      <td>
-                        <div class="sparkbar" data-color="#f56954" data-height="20">90,-80,90,70,-61,83,63</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td><a href="pages/examples/invoice.html">OR9842</a></td>
-                      <td>Call of Duty IV</td>
-                      <td><span class="badge badge-success">Shipped</span></td>
-                      <td>
-                        <div class="sparkbar" data-color="#00a65a" data-height="20">90,80,90,-70,61,-83,63</div>
-                      </td>
-                    </tr>
+                      <tr>
+                        <td><a href="pages/examples/invoice.html">OR9842</a></td>
+                        <td>Call of Duty IV</td>
+                        <td><span class="badge badge-success">Shipped</span></td>
+                        <td>
+                          <div class="sparkbar" data-color="#00a65a" data-height="20">
+                            90,80,90,-70,61,-83,63
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><a href="pages/examples/invoice.html">OR1848</a></td>
+                        <td>Samsung Smart TV</td>
+                        <td><span class="badge badge-warning">Pending</span></td>
+                        <td>
+                          <div class="sparkbar" data-color="#f39c12" data-height="20">
+                            90,80,-90,70,61,-83,68
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><a href="pages/examples/invoice.html">OR7429</a></td>
+                        <td>iPhone 6 Plus</td>
+                        <td><span class="badge badge-danger">Delivered</span></td>
+                        <td>
+                          <div class="sparkbar" data-color="#f56954" data-height="20">
+                            90,-80,90,70,-61,83,63
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><a href="pages/examples/invoice.html">OR7429</a></td>
+                        <td>Samsung Smart TV</td>
+                        <td><span class="badge badge-info">Processing</span></td>
+                        <td>
+                          <div class="sparkbar" data-color="#00c0ef" data-height="20">
+                            90,80,-90,70,-61,83,63
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><a href="pages/examples/invoice.html">OR1848</a></td>
+                        <td>Samsung Smart TV</td>
+                        <td><span class="badge badge-warning">Pending</span></td>
+                        <td>
+                          <div class="sparkbar" data-color="#f39c12" data-height="20">
+                            90,80,-90,70,61,-83,68
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><a href="pages/examples/invoice.html">OR7429</a></td>
+                        <td>iPhone 6 Plus</td>
+                        <td><span class="badge badge-danger">Delivered</span></td>
+                        <td>
+                          <div class="sparkbar" data-color="#f56954" data-height="20">
+                            90,-80,90,70,-61,83,63
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><a href="pages/examples/invoice.html">OR9842</a></td>
+                        <td>Call of Duty IV</td>
+                        <td><span class="badge badge-success">Shipped</span></td>
+                        <td>
+                          <div class="sparkbar" data-color="#00a65a" data-height="20">
+                            90,80,90,-70,61,-83,63
+                          </div>
+                        </td>
+                      </tr>
                     </tbody>
                   </table>
                 </div>
@@ -649,8 +740,12 @@
               </div>
               <!-- /.card-body -->
               <div class="card-footer clearfix">
-                <a href="javascript:void(0)" class="btn btn-sm btn-info float-left">Place New Order</a>
-                <a href="javascript:void(0)" class="btn btn-sm btn-secondary float-right">View All Orders</a>
+                <a href="javascript:void(0)" class="btn btn-sm btn-info float-left"
+                  >Place New Order</a
+                >
+                <a href="javascript:void(0)" class="btn btn-sm btn-secondary float-right"
+                  >View All Orders</a
+                >
               </div>
               <!-- /.card-footer -->
             </div>
@@ -746,7 +841,8 @@
                       United States of America
                       <span class="float-right text-danger">
                         <i class="fas fa-arrow-down text-sm"></i>
-                        12%</span>
+                        12%</span
+                      >
                     </a>
                   </li>
                   <li class="nav-item">
@@ -790,11 +886,16 @@
                 <ul class="products-list product-list-in-card pl-2 pr-2">
                   <li class="item">
                     <div class="product-img">
-                      <img src="dist/img/default-150x150.png" alt="Product Image" class="img-size-50">
+                      <img
+                        src="dist/img/default-150x150.png"
+                        alt="Product Image"
+                        class="img-size-50"
+                      />
                     </div>
                     <div class="product-info">
-                      <a href="javascript:void(0)" class="product-title">Samsung TV
-                        <span class="badge badge-warning float-right">$1800</span></a>
+                      <a href="javascript:void(0)" class="product-title"
+                        >Samsung TV <span class="badge badge-warning float-right">$1800</span></a
+                      >
                       <span class="product-description">
                         Samsung 32" 1080p 60Hz LED Smart HDTV.
                       </span>
@@ -803,11 +904,16 @@
                   <!-- /.item -->
                   <li class="item">
                     <div class="product-img">
-                      <img src="dist/img/default-150x150.png" alt="Product Image" class="img-size-50">
+                      <img
+                        src="dist/img/default-150x150.png"
+                        alt="Product Image"
+                        class="img-size-50"
+                      />
                     </div>
                     <div class="product-info">
-                      <a href="javascript:void(0)" class="product-title">Bicycle
-                        <span class="badge badge-info float-right">$700</span></a>
+                      <a href="javascript:void(0)" class="product-title"
+                        >Bicycle <span class="badge badge-info float-right">$700</span></a
+                      >
                       <span class="product-description">
                         26" Mongoose Dolomite Men's 7-speed, Navy Blue.
                       </span>
@@ -816,13 +922,15 @@
                   <!-- /.item -->
                   <li class="item">
                     <div class="product-img">
-                      <img src="dist/img/default-150x150.png" alt="Product Image" class="img-size-50">
+                      <img
+                        src="dist/img/default-150x150.png"
+                        alt="Product Image"
+                        class="img-size-50"
+                      />
                     </div>
                     <div class="product-info">
                       <a href="javascript:void(0)" class="product-title">
-                        Xbox One <span class="badge badge-danger float-right">
-                        $350
-                      </span>
+                        Xbox One <span class="badge badge-danger float-right"> $350 </span>
                       </a>
                       <span class="product-description">
                         Xbox One Console Bundle with Halo Master Chief Collection.
@@ -832,14 +940,17 @@
                   <!-- /.item -->
                   <li class="item">
                     <div class="product-img">
-                      <img src="dist/img/default-150x150.png" alt="Product Image" class="img-size-50">
+                      <img
+                        src="dist/img/default-150x150.png"
+                        alt="Product Image"
+                        class="img-size-50"
+                      />
                     </div>
                     <div class="product-info">
-                      <a href="javascript:void(0)" class="product-title">PlayStation 4
-                        <span class="badge badge-success float-right">$399</span></a>
-                      <span class="product-description">
-                        PlayStation 4 500GB Console (PS4)
-                      </span>
+                      <a href="javascript:void(0)" class="product-title"
+                        >PlayStation 4 <span class="badge badge-success float-right">$399</span></a
+                      >
+                      <span class="product-description"> PlayStation 4 500GB Console (PS4) </span>
                     </div>
                   </li>
                   <!-- /.item -->
@@ -856,18 +967,43 @@
           <!-- /.col -->
         </div>
         <!-- /.row -->
-      </div><!--/. container-fluid -->
+      </div>
+  
+      <!--/. container-fluid -->
     </section>
     <!-- /.content -->
   </div>
-  <!-- /.content-wrapper -->
-
+    <!-- /.content-wrapper -->
 
     <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
-  <!-- /.control-sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
 
-  <app-footer></app-footer>
-</div>
+    <app-footer></app-footer>
+    <!-- REQUIRED SCRIPTS -->
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.js"></script>
+
+    <!-- PAGE PLUGINS -->
+    <!-- jQuery Mapael -->
+    <script src="plugins/jquery-mousewheel/jquery.mousewheel.js"></script>
+    <script src="plugins/raphael/raphael.min.js"></script>
+    <script src="plugins/jquery-mapael/jquery.mapael.min.js"></script>
+    <script src="plugins/jquery-mapael/maps/usa_states.min.js"></script>
+    <!-- ChartJS -->
+    <script src="plugins/chart.js/Chart.min.js"></script>
+
+    <!-- AdminLTE for demo purposes -->
+    <script src="dist/js/demo.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="dist/js/pages/dashboard2.js"></script>
+  </div>
+</body>

@@ -8,7 +8,7 @@ import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-admin',
   standalone: true,
-  imports: [Header, Sidebar, Content, Footer, RouterModule],
+  imports: [Header, Sidebar, Content, Footer, RouterModule,],
   templateUrl: './admin.html',
   styleUrls: ['./admin.css']
 })

@@ -1,17 +1,31 @@
-import { Component } from '@angular/core';
-import { Header } from '../header/header';
+import { Component, OnInit } from '@angular/core';
+
 import { Sidebar } from '../sidebar/sidebar';
 import { Footer } from '../footer/footer';
+import { HeadderDark } from '../headder-dark/headder-dark';
 import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard2',
   standalone: true,
-  imports: [Header, Sidebar, Footer, RouterModule],
+  imports: [Sidebar, Footer, HeadderDark, RouterModule],
   templateUrl: './dashboard2.html',
   styleUrl: './dashboard2.css',
 })
-export class Dashboard2 {
 
+export class Dashboard2 implements OnInit {
+
+  ngOnInit(): void {
+
+    // REFRESH SEKALI SAJA
+    if (!sessionStorage.getItem('dashboardRefreshed')) {
+
+      sessionStorage.setItem('dashboardRefreshed', 'true');
+
+      window.location.reload();
+
+    }
+
+  }
 
 }
