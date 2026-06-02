@@ -63,9 +63,11 @@ export class Mahasiswa implements AfterViewInit {
             (element.JenisKelamin == 'Perempuan' ||
             element.JenisKelamin == 'perempuan'
               ? "<i class='fas fa-venus text-danger'></i>"
-              : element.JenisKelamin != 'undefined'
+              : element.JenisKelamin != 'Laki-laki'
               ? "<i class='fas fa-mars text-primary'></i>"
               : '');
+            
+          
 
           // TOMBOL HAPUS
           var tombolHapus =
