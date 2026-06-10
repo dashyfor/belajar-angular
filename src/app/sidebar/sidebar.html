@@ -136,6 +136,17 @@
           </li>
 
           <li class="nav-item">
+            <a
+              [routerLink]="['/cuaca']"
+              routerLinkActive="router-link-active"
+              class="nav-link {{ moduleName == 'cuaca' ? 'active' : '' }}"
+            >
+              <i class="nav-icon fas fa-cloud-rain"></i>
+              <p>cuaca</p>
+            </a>
+          </li>
+
+          <li class="nav-item">
             <a href="javascript:void(0)" class="nav-link" (click)="toggleTheme()">
               <i
                 class="nav-icon fas fa-sun"
@@ -145,6 +156,18 @@
               <p>{{ isDarkMode ? 'Light Mode' : 'Dark Mode' }}</p>
             </a>
           </li>
+
+          <li class="nav-item">
+            <a
+              [routerLink]="['/logout']"
+              routerLinkActive="router-link-active"
+              class="nav-link {{ moduleName == 'logout' ? 'active' : '' }}"
+            >
+              <i class="nav-icon fas fa-circle"></i>
+              <p>logout</p>
+            </a>
+          </li>
+
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

@@ -16,19 +16,24 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
+            "outputPath": "dist/angular231103886",
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
+
             "assets": [
               {
                 "glob": "**/*",
                 "input": "public"
               }
             ],
+
             "styles": [
-              
+              "node_modules/datatables.net-dt/css/dataTables.dataTables.min.css",
               "src/styles.css"
-            ]
+            ],
+            "allowedCommonJsDependencies": ["crypto-js"]
           },
+
           "configurations": {
             "production": {
               "budgets": [
@@ -43,29 +48,37 @@
                   "maximumError": "8kB"
                 }
               ],
+
               "outputHashing": "all",
               "serviceWorker": "ngsw-config.json"
             },
+
             "development": {
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
             }
           },
+
           "defaultConfiguration": "production"
         },
+
         "serve": {
           "builder": "@angular/build:dev-server",
+
           "configurations": {
             "production": {
               "buildTarget": "angular231103886:build:production"
             },
+
             "development": {
               "buildTarget": "angular231103886:build:development"
             }
           },
+
           "defaultConfiguration": "development"
         },
+
         "test": {
           "builder": "@angular/build:unit-test"
         }
